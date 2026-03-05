@@ -6,6 +6,8 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
+1 - After reading the code first thing I found was wrong hint provided for the guess and secret generated. 
+2 -
   (for example: "the secret number kept changing" or "the hints were backwards").
 
 ---
