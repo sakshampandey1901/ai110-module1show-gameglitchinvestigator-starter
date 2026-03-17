@@ -25,9 +25,19 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [The game is a number guessing game where the player tries to guess a randomly selected secret number within a limited number of attempts. Hints are provided to guide the player whether their guess is too high or too low, and the game tracks a score based on performance.] Describe the game's purpose.
+
+- [The secret number sometimes changed unexpectedly because it was converted to a string in certain cases, causing incorrect comparisons.
+
+The hints ("Higher" / "Lower") were reversed or inconsistent, especially when the secret was compared as a string.
+
+Starting a new game ignored the selected difficulty range and always generated numbers between 1 and 100.] Detail which bugs you found.
+
+- [Removed string conversions so the secret number and guesses remain integers, fixing incorrect hint logic.
+
+Updated check_guess() to provide consistent, correct hints for "Too High," "Too Low," and "Win."
+
+Modified the new game logic to respect the chosen difficulty range.] Explain what fixes you applied.
 
 ## 📸 Demo
 
