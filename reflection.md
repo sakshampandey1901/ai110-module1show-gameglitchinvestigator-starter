@@ -36,8 +36,14 @@ One example of a misleading AI suggestion was a recommendation to rewrite a larg
 ## 4. What did you learn about Streamlit and state?
 
 - In your own words, explain why the secret number kept changing in the original app.
+The secret number kept changing in the original app because Streamlit reruns the entire script every time the user interacts with the interface.
+
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+I would explain Streamlit reruns to a friend by saying that the app behaves like a script that restarts from the top whenever the user interacts with it.
+
 - What change did you make that finally gave the game a stable secret number?
+The change that finally gave the game a stable secret number was storing it in st.session_state.secret
+
 
 ---
 
@@ -45,5 +51,10 @@ One example of a misleading AI suggestion was a recommendation to rewrite a larg
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+One habit I want to reuse in future projects is breaking problems into smaller debugging steps and testing each change immediately instead of trying to fix everything at once.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+Next time I work with AI on a coding task, I would be more careful about reviewing every suggestion before implementing it.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+This project changed the way I think about AI-generated code because it showed me that AI can speed up development, but the output still needs careful review and testing.
