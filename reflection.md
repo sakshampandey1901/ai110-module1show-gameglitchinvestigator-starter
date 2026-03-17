@@ -6,17 +6,21 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
-1 - After reading the code first thing I found was wrong hint provided for the guess and secret generated. 
-2 -
-  (for example: "the secret number kept changing" or "the hints were backwards").
-
+1 - The hint messages in the fallback branch were reversed.
+2 - The new game reset ignored the difficulty range and always generated numbers between 1 and 100.
+3 - The secret number sometimes became a string due to attempt parity logic, which caused incorrect comparisons
 ---
 
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+I used ChatGPT and GitHub Copilot during this project. Copilot helped by analyzing the code inside the project files and suggesting refactoring steps and ChatGPT helped in understanding the logic behind the bugs.
+
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+Identifying that the game sometimes converted the secret number into a string before comparing it with the user's guess.
+
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+One example of a misleading AI suggestion was a recommendation to rewrite a large portion of the scoring logic even though the scoring system itself was not the main issue.
 
 ---
 
